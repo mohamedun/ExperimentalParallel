@@ -1,9 +1,15 @@
 import ray
-ray.init(ignore_reinit_error=True)
-print(ray.get_webui.url())
+import time
+
+ray.init(ignore_reinit_error=True, address="auto")
+
 @ray.remote
 def f(x):
+    time.sleep(1)
     return x*x
 
-# futures = [f.remote(i) for i in range(4)]
-# print(ray.get(futures))
+futures = [f.remote(i) for i in range(1000)]
+a = ray.get(futures)
+print(a)
+with f as open('myfile', 'w'):
+    f.write(str(a))
