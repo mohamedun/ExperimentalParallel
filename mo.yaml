@@ -12,9 +12,9 @@ auth:
 
 head_node:
     InstanceType: m5.large
-    ImageId: ami-0a2363a9cff180a64
+    ImageId: ami-0be2609ba883822ec
 
 worker_nodes:
     InstanceType: m5.large
-    ImageId: ami-0a2363a9cff180a64
+    ImageId: ami-0be2609ba883822ec
 
