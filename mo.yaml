@@ -19,4 +19,6 @@ worker_nodes:
     InstanceType: m5.large
     ImageId: ami-0be2609ba883822ec
 
-setup_commands: []
+setup_commands:
+    - sudo yum update -y
+    - sudo yum install git gcc g++ polkit -y
