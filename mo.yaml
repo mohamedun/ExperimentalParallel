@@ -29,7 +29,7 @@ setup_commands:
     - bash Miniconda3-latest-Linux-x86_64.sh -b -p /home/ec2-user/miniconda
     - export PATH=/home/ec2-user/miniconda/bin:$PATH
     - miniconda/bin/conda create -n PokerAI python=3.6 -y
-    - miniconda/bin/conda init
+    - miniconda/bin/conda init bash
     - miniconda/bin/conda activate PokerAI
     - pip install requests
     - miniconda/bin/conda install pytorch=0.4.1 -c pytorch -y
