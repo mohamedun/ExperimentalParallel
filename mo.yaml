@@ -17,3 +17,6 @@ head_node:
 worker_nodes:
     InstanceType: m5.large
     ImageId: ami-0404ddec9491a5a31
+
+setup_commands:
+    - git clone https://github.com/mohamedun/Deep-CFR.git
