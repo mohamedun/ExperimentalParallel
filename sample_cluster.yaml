@@ -63,7 +63,7 @@ auth:
 # http://boto3.readthedocs.io/en/latest/reference/services/ec2.html#EC2.ServiceResource.create_instances
 head_node:
     InstanceType: m5.large
-    ImageId: ami-0a2363a9cff180a64 # Deep Learning AMI (Ubuntu) Version 30
+    ImageId: ami-0a2363a9cff180a64
 
     # You can provision additional disk space with a conf as follows
     BlockDeviceMappings:

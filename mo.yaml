@@ -1,0 +1,20 @@
+cluster_name: mymo
+
+max_workers: 2
+
+provider:
+    type: aws
+    region: us-east-1
+    availability_zone: us-east-1c
+
+auth:
+    ssh_user: ubuntu
+
+head_node:
+    InstanceType: m5.large
+    ImageId: ami-0a2363a9cff180a64
+
+worker_nodes:
+    InstanceType: m5.large
+    ImageId: ami-0a2363a9cff180a64
+
