@@ -8,7 +8,7 @@ provider:
     availability_zone: us-east-1c
 
 auth:
-    ssh_user: ubuntu
+    ssh_user: ec2-user
 
 head_node:
     InstanceType: m5.large
