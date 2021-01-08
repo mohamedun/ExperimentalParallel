@@ -10,9 +10,4 @@ provider:
 auth:
     ssh_user: ubuntu
 
-head_node:
-    InstanceType: m5.large
-
-worker_nodes:
-    InstanceType: m5.large
 
