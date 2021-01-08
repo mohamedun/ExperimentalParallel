@@ -20,3 +20,4 @@ worker_nodes:
 
 setup_commands:
     - git clone https://github.com/mohamedun/Deep-CFR.git
+    - pip install PokerRL[distributed]
